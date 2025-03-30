@@ -1,0 +1,143 @@
+
+/* Collections Page Styles */
+
+/* Collections Banner */
+.collections-banner {
+  background-color: var(--secondary);
+  padding: 8rem 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 500;
+}
+
+.filter-group select {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: #ffffff;
+}
+
+/* Products Section */
+.products-section {
+  padding: 2rem 0 4rem;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.men-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Shipping Banner */
+.shipping-banner {
+  background-color: var(--secondary);
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.shipping-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.shipping-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.shipping-item svg {
+  color: var(--rich-purple);
+  margin-bottom: 1rem;
+  height: 36px;
+  width: 36px;
+}
+
+.shipping-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.shipping-item p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .collections-banner {
+    padding: 7rem 0 3rem;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .collections-banner {
+    padding: 6rem 0 2.5rem;
+  }
+  
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .shipping-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

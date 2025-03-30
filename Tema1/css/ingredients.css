@@ -1,0 +1,371 @@
+
+/* Ingredients Page Styles */
+
+/* Banner Section */
+.ingredients-banner {
+  background-color: var(--secondary);
+  padding: 8rem 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+/* Notes Structure */
+.notes-structure {
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.notes-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.notes-icon {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  color: #ffffff;
+}
+
+.top-notes-icon {
+  background-color: var(--rich-purple);
+}
+
+.middle-notes-icon {
+  background-color: #9e73d9;
+}
+
+.base-notes-icon {
+  background-color: #7e3dbe;
+}
+
+.notes-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.notes-divider {
+  height: 40px;
+  width: 2px;
+  background-color: var(--rich-purple);
+  margin: 0 auto 2rem 35px;
+}
+
+/* Ingredients Tabs */
+.ingredients-tabs {
+  margin-top: 3rem;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: var(--muted);
+  transition: var(--transition);
+}
+
+.tab-btn.active {
+  color: var(--rich-purple);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--rich-purple);
+  transform: translateY(1px);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ingredient Grid */
+.ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.ingredient-card {
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.ingredient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.ingredient-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.ingredient-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ingredient-card:hover .ingredient-image img {
+  transform: scale(1.05);
+}
+
+.ingredient-info {
+  padding: 1.5rem;
+}
+
+.ingredient-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.ingredient-info h3::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--rich-purple);
+}
+
+.ingredient-info p {
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Making Process */
+.making-process {
+  background-color: var(--secondary);
+}
+
+.process-steps {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  position: relative;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 36px;
+  width: 2px;
+  background-color: var(--rich-purple);
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background-color: var(--rich-purple);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 1;
+  margin-right: 2rem;
+}
+
+.step-content {
+  padding-top: 0.75rem;
+}
+
+.step-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+/* FAQ Accordion */
+.accordion {
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: var(--transition);
+}
+
+.accordion-header:hover {
+  background-color: #f8f8f8;
+}
+
+.accordion-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: var(--rich-purple);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  padding: 0 1.25rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 300px;
+  padding: 0 1.25rem 1.25rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .ingredients-banner {
+    padding: 7rem 0 3rem;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ingredients-banner {
+    padding: 6rem 0 2.5rem;
+  }
+  
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  
+  .notes-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .notes-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .notes-divider {
+    margin: 0 auto 2rem;
+  }
+  
+  .tab-btn {
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .process-steps::before {
+    display: none;
+  }
+  
+  .process-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ingredient-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tabs-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

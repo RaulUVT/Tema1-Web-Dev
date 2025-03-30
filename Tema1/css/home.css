@@ -1,0 +1,323 @@
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  min-height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1595425970377-c61637d01558?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Art of Fragrance Section */
+.art-of-fragrance {
+  background-image: url("https://images.unsplash.com/photo-1595425970377-c61637d01558?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.art-of-fragrance .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.art-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.art-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.art-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Special Offers Section */
+.special-offers {
+  background-color: var(--cream);
+}
+
+.special-offers-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Rewards Section */
+.rewards-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.rewards-image img {
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+.rewards-info h2 {
+  margin-bottom: 1rem;
+}
+
+.rewards-info p {
+  margin-bottom: 2rem;
+}
+
+.rewards-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tier-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--rich-purple);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.tier-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tier-info p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+/* Signup Section */
+.signup-section {
+  background-color: var(--secondary);
+}
+
+.signup-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signup-form-container h2 {
+  margin-bottom: 0.75rem;
+}
+
+.signup-form-container p {
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+
+.signup-form {
+  text-align: left;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 4rem 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  background-color: var(--rich-purple);
+  color: #ffffff;
+}
+
+.footer h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: #cccccc;
+}
+
+.footer-links a:hover {
+  color: var(--rich-purple);
+}
+
+address {
+  font-style: normal;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.payment-methods span {
+  color: #cccccc;
+}
+
+.payment-methods img {
+  height: 25px;
+  width: auto;
+  filter: brightness(0.8);
+}
+
+.copyright {
+  color: #cccccc;
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .rewards-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .rewards-image {
+    order: 2;
+  }
+  
+  .rewards-info {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .art-content h2 {
+    font-size: 2rem;
+  }
+  
+  .rewards-tiers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .rewards-tiers {
+    grid-template-columns: 1fr;
+  }
+}
