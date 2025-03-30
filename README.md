@@ -7,7 +7,7 @@ Lovable – Generatorul de site-uri utilizat pentru crearea designului și imple
 
 HTML, CSS, JavaScript – Elemente de bază pentru personalizarea aspectului și funcționalităților.
 
-Google Fonts – Utilizat pentru fonturile Playfair Display (headings) și Lora (text body).
+Google Fonts – Utilizat pentru fonturile Playfair Display (headings) și Muli (text body).
 
 SEO Meta Tags – Optimizare pentru motoarele de căutare.
 
